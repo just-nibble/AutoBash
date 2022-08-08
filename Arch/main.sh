@@ -20,8 +20,8 @@ sudo pamac build spotify --no-confirm &&
 flatpak install com.bitwarden.desktop -y &&
 
 ## snaps ##
-onlyoffice-desktopeditors
-code --classic
+sudo snap install onlyoffice-desktopeditors &&
+sudo snap install code --classic &&
 
 ## Latte ##
 git clone https://github.com/tobecci/kde-settings/ &&
