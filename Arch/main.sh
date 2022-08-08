@@ -25,5 +25,9 @@ code --classic
 
 ## Latte ##
 git clone https://github.com/tobecci/kde-settings/ &&
-qdbus org.kde.lattedock /Latte org.kde.LatteDock.switchToLayout "kde-settings/tobecci.layout.latte"
+qdbus org.kde.lattedock /Latte org.kde.LatteDock.switchToLayout "kde-settings/tobecci.layout.latte" &&
 
+## Configure Docker ##
+sudo systemctl start docker.service &&
+sudo systemctl enable docker.service &&
+sudo usermod -aG docker $USER 
